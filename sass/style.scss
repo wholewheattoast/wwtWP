@@ -1,0 +1,107 @@
+/*
+Theme Name:     wholewheattoast Child
+Theme URI:      http://www.wholewheattoast.com
+Description:    Child theme first pass for wwt of boilerplate 
+Author:         shawn eisenach
+Author URI:     http://www.wholewheattoast.com
+Template:       boilerplate
+Version:        0.1.0
+*/
+ 
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+
+/* #SASSVariables
+==================================================*/
+	$lineHeight: 1.375em;			/* 16px / 16px = 1em */
+	$linkColor: green;
+	$fontColor: #555;
+	
+/* Scaffolding extras
+================================================== */
+	.alpha { margin-left: 0; }
+	.omega { margin-right: 0; }
+
+
+/* #Basic Styles
+================================================== */
+
+	body {
+   		font-family: Helvetica, Arial, sans-serif;
+   		font-size: 100%;
+   		color: $fontColor;
+    	line-height: $lineHeight;  
+	}
+
+
+/* #SiteStyles
+================================================== */
+	.displayInline { display: inline; }
+	.thickBottemBorder { border-bottom: black solid .25em; }	/* 4px / 16px = .25em */
+	.thickTopBorder { border-top: black solid .25em; } /* 4px / 16px = .25em */
+
+/* #boilerplate styles
+================================================== */
+	.entry-meta, .entry-meta a, .entry-meta a:visted { color: #999; }
+	.entry-meta > div a:visted { color: #999; }
+	
+	#nav-below { margin: 2em 0; }
+	
+	.post {margin: 0 0 2em 0; }
+	
+
+/* #Images
+================================================== */
+
+	img {
+		border: none;
+		max-width: 100%;
+		height: auto;
+		/* REMEMBER add width: 100%; to ie sheet */
+	}
+	
+/* #Links
+================================================== */
+
+	a {
+		color: $fontColor;
+		text-decoration: none;
+		outline: 0;
+		-webkit-transition: color .25s;
+		-moz-transition: color .25s;
+		-o-transition: color .25s;
+		-ms-transition: color .25s;
+		transition: color .25s;
+		}
+		
+	a:visited { color: $fontColor; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: $linkColor; text-decoration: none;}
+	p a, p a:visited { line-height: inherit; }
+
+
+/* Masthead
+================================================== */
+
+	.masthead {
+		margin: 0 auto 2em auto;
+		padding: 0 0 1em 0;
+	}
+	
+	.masthead h1 {
+			font-size: 1.875em;
+		}
+
+/* Site Footer
+================================================== */
+
+	.siteFooter { margin: 4em 0; }
+	
+	
+/* Entry
+================================================== */
+
+	.entry-title { font-size: 1.375em; }
+
+
+
