@@ -40,16 +40,18 @@ Version:        0.1.0
 	.displayInline { display: inline; }
 	.thickBottemBorder { border-bottom: black solid .25em; }	/* 4px / 16px = .25em */
 	.thickTopBorder { border-top: black solid .25em; } /* 4px / 16px = .25em */
+	.hashTagSeperater { padding: 0 .25em 0 1em; }
+	.center { margin: 0 auto; }
 
 /* #boilerplate styles
 ================================================== */
-	.entry-meta, .entry-meta a, .entry-meta a:visted { color: #999; }
-	.entry-meta > div a:visted { color: #999; }
 	
 	#nav-below { margin: 2em 0; }
+	.nav-next { text-align: right; }
 	
 	.post {margin: 0 0 2em 0; }
 	
+	.cat-item { list-style: none; }
 
 /* #Images
 ================================================== */
@@ -79,29 +81,70 @@ Version:        0.1.0
 	a:hover, a:focus { color: $linkColor; text-decoration: none;}
 	p a, p a:visited { line-height: inherit; }
 
+/* #Lists
+================================================== */
+	
+	ul, ol { margin: 0 0 1.25em 0; }		/* 20px / 16px = 1.25em */
+
+	ul { list-style: none; }
+
+	li { margin-bottom: .25em; }			/* 4px / 16px = .25em */
+	
+	dt { 
+		float: left;
+		margin-right: .5em;					/* 8px / 16px = .5em */
+		font-weight: bold;
+	}
+
 
 /* Masthead
 ================================================== */
 
-	.masthead {
-		margin: 0 auto 2em auto;
-		padding: 0 0 1em 0;
-	}
+	.masthead { margin: 2em auto; }
 	
-	.masthead h1 {
-			font-size: 1.875em;
-		}
+	.masthead h1 { font-size: 1.875em; }
+		
+	.logo {
+		/* background: url(/image/logos/logo1.gif) no-repeat 0 .5em; */
+		/* text-indent: 150%; */
+		/* width: 320px; */
+		height: 16em;
+	}
 
 /* Site Footer
 ================================================== */
 
 	.siteFooter { margin: 4em 0; }
 	
-	
+
+/* Archives
+================================================== */
+	.archiveHeader h1 { font-size: 1.25em; }
+
 /* Entry
 ================================================== */
 
-	.entry-title { font-size: 1.375em; }
+	.entry-title { 
+		font-size: 1.125em;
+		line-height: 1.5em;
+		}
+	
+	/* entry meta data */
+	.entry-meta { color: #999; }
+	.entry-meta a { color: #999; }
+	.entry-meta a:visted { color: #999; }
 
+	.entry-date { padding: 0 1em 0 0; }
 
-
+/* Header Widget menu
+================================================== */	
+	#menu-header-menu {
+		list-style: none;
+		margin: 0;
+	}
+	
+	#menu-header-menu li { 
+		display: inline;
+		margin-right: 1em;
+		}
+	
